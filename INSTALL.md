@@ -26,26 +26,32 @@ scons --help
 #### Libraries
 
 * __loudnessAnalyser__  
-Depends on boost accumulators.
+Depends on boost accumulators (headers only).
 
 * __loudnessCorrector__  
-Depends on loudnessAnalyser and boost accumulators.
+Depends on loudnessAnalyser.
 
 * __loudnessTools__  
-Depends on loudnessAnalyser, loudnessCorrector, and [libsndfile](http://www.mega-nerd.com/libsndfile/).
+Depends on loudnessAnalyser.
 
+* __loudnessIO__  
+Depends on loudnessAnalyser and [libsndfile](http://www.mega-nerd.com/libsndfile/).
 
 #### Apps
 
 * __loudness-analyser__  
-Depends on loudnessAnalyser and loudnessTools.
+To analyse given audio files.
 
 * __loudness-corrector__  
-Depends on loudnessCorrector and loudnessTools.
+To analyse and correct given audio files.
 
 * __loudness-validator__  
-Depends on loudnessAnalyser, loudnessCorrector, loudnessTools and [Qt4](http://qt.nokia.com/products/).
+___External dependencies to [Qt4](http://qt.nokia.com/products/).___  
+Simple GUI to analyse and correct given audio files.
 
+* __loudness-media-analyser__  
+___External dependencies to [avtranscoder](https://github.com/avTranscoder/avTranscoder).___  
+To analyse audio in given files of any types.
 
 ## Tested compilers
 
@@ -54,6 +60,7 @@ Depends on loudnessAnalyser, loudnessCorrector, loudnessTools and [Qt4](http://q
 * CLang 3.1 on OpenSUSE 11.2
 
 * GCC 4.5.2 on Windows XP
+* MSVC 12 on Windows Se7en
 
 
 ## Tested libraries
