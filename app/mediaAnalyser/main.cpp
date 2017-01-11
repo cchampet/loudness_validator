@@ -128,7 +128,7 @@ int main(int argc, char** argv)
     }
 
     avtranscoder::preloadCodecsAndFormats();
-    avtranscoder::Logger::setLogLevel(AV_LOG_QUIET);
+    avtranscoder::Logger::setLogLevel(AV_LOG_DEBUG);
 
     try
     {
